@@ -1,39 +1,39 @@
 {
-	"key": "<YOUR APPLICATION EXTENSION KEY HERE>",
+	"key": "8e728a81-7669-421b-9391-d7aabb1963d0",
 	"metaData": {
 		"icon": "images/icon.png",
 		"iconSmall": "images/icon_small.png"
 	},
-	"type": "<TYPE, FOR CUSTOM ACTIVITY USE RESTDECISION>",
+	"type": "RESTDECISION",
 	"lang": {
 		"en-US": {
-			"name": "<CUSTOM ACTIVITY NAME>",
-			"description": "<CUSTOM ACTIVITY DESCRIPTION>"
+			"name": "Amex Decision",
+			"description": "Amex API Calls"
 		}
 	},
 	"workflowApiVersion": "1.1",
 	"configurationArguments": {
-		"applicationExtensionKey": "<YOUR APPLICATION EXTENSION KEY HERE>",
+		"applicationExtensionKey": "8e728a81-7669-421b-9391-d7aabb1963d0",
 		"save": {
-			"url": "https://<URL OF THE SERVER RUNNING THE BACKEND>/activity/save",
+			"url": "https://customactivity-sfmc.herokuapp.com/activity/save",
 			"verb": "POST",
 			"body": "",
 			"useJwt": true,
-			"customerKey": "<EXTERNAL KEY OF THE SALT KEY FOR THE JWT>"
+			"customerKey": "Pp5fqAyGp171gj4RTjXpnjK5Tg6aBEkHWrW7iarSldIx7AYtsM69aMZGyXY7Vp_9M26ezDv_RUpkQvNCKANLUFj15BqzpJ2ClGbHNjnkcbyQhri2Cvyp7vNDzYrZ7INo-ndmaplxAeHP46khic7Oon9s00-oghC4kqlPobHz7O5oVVmTUcpJWm7MdnXDlHFr2zHuOZai4zFezwDBKf3NJU5cteyVYo9PnI8xVb6erBD688Cd32q10lP0EK9BCA2"
 		},
 		"publish": {
-			"url": "https://<URL OF THE SERVER RUNNING THE BACKEND>/activity/publish",
+			"url": "https://customactivity-sfmc.herokuapp.com/activity/publish",
 			"verb": "POST",
 			"body": "",
 			"useJwt": true,
-			"customerKey": "<EXTERNAL KEY OF THE SALT KEY FOR THE JWT>"
+			"customerKey": "Pp5fqAyGp171gj4RTjXpnjK5Tg6aBEkHWrW7iarSldIx7AYtsM69aMZGyXY7Vp_9M26ezDv_RUpkQvNCKANLUFj15BqzpJ2ClGbHNjnkcbyQhri2Cvyp7vNDzYrZ7INo-ndmaplxAeHP46khic7Oon9s00-oghC4kqlPobHz7O5oVVmTUcpJWm7MdnXDlHFr2zHuOZai4zFezwDBKf3NJU5cteyVYo9PnI8xVb6erBD688Cd32q10lP0EK9BCA2"
 		},
 		"validate": {
-			"url": "https://<URL OF THE SERVER RUNNING THE BACKEND>/activity/validate",
+			"url": "https://customactivity-sfmc.herokuapp.com/activity/validate",
 			"verb": "POST",
 			"body": "",
 			"useJwt": true,
-			"customerKey": "<EXTERNAL KEY OF THE SALT KEY FOR THE JWT>"
+			"customerKey": "Pp5fqAyGp171gj4RTjXpnjK5Tg6aBEkHWrW7iarSldIx7AYtsM69aMZGyXY7Vp_9M26ezDv_RUpkQvNCKANLUFj15BqzpJ2ClGbHNjnkcbyQhri2Cvyp7vNDzYrZ7INo-ndmaplxAeHP46khic7Oon9s00-oghC4kqlPobHz7O5oVVmTUcpJWm7MdnXDlHFr2zHuOZai4zFezwDBKf3NJU5cteyVYo9PnI8xVb6erBD688Cd32q10lP0EK9BCA2"
 		}
 	},
 	"wizardSteps": [
@@ -43,18 +43,18 @@
 	"outcomes": [
 		{
 			"arguments": {
-				"branchResult": "<KEY FOR PATH 1>"
+				"branchResult": "True"
 			},
 			"metaData": {
-				"label": "<LABEL FOR PATH 1>"
+				"label": "True"
 			}
 		},
 		{
 			"arguments": {
-				"branchResult": "<KEY FOR PATH 2>"
+				"branchResult": "False"
 			},
 			"metaData": {
-				"label": "<LABEL FOR PATH 2>"
+				"label": "False"
 			}
 		}
 	],
@@ -70,18 +70,18 @@
 		"execute": {
 			"inArguments": [],
 			"outArguments": [],
-			"url": "https://<URL OF THE SERVER RUNNING THE BACKEND>/activity/execute",
+			"url": "https://customactivity-sfmc.herokuapp.com/activity/execute",
 			"verb": "POST",
 			"body": "",
 			"header": "",
 			"format": "json",
 			"useJwt": true,
-			"customerKey": "<EXTERNAL KEY OF THE SALT KEY FOR THE JWT>",
+			"customerKey": "Pp5fqAyGp171gj4RTjXpnjK5Tg6aBEkHWrW7iarSldIx7AYtsM69aMZGyXY7Vp_9M26ezDv_RUpkQvNCKANLUFj15BqzpJ2ClGbHNjnkcbyQhri2Cvyp7vNDzYrZ7INo-ndmaplxAeHP46khic7Oon9s00-oghC4kqlPobHz7O5oVVmTUcpJWm7MdnXDlHFr2zHuOZai4zFezwDBKf3NJU5cteyVYo9PnI8xVb6erBD688Cd32q10lP0EK9BCA2",
 			"timeout": 90000
 		}
 	},
 	"edit": {
-		"url": "https://<URL OF THE SERVER RUNNING THE BACKEND>/index.html",
+		"url": "https://customactivity-sfmc.herokuapp.com/index.html",
 		"height": 200,
 		"width": 500
 	}
